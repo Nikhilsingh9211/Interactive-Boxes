@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="bogo-header">
+            <hr /><span>YAY! It’s BOGO</span>
+            <hr />
+        </div>
+
+        <!-- Plans -->
+        <div class="box active" data-units="1" data-price="10.00">
+            <div class="header">
+                <input type="radio" name="unit" checked />
+                <span class="label">1 Unit <span class="discount">10% Off</span>
+                    <div class="description">Standard Price</div>
+                </span>
+                <div class="price">
+                    <div class="new">$10.00 USD</div>
+                    <div class="old"><s>$24.00 USD</s></div>
+                </div>
+            </div>
+            <div class="details"></div>
+        </div>
+
+        <div class="box" data-units="2" data-price="18.00">
+            <div class="popular-tag">MOST POPULAR</div>
+            <div class="header">
+                <input type="radio" name="unit" />
+                <span class="label">2 Units <span class="discount">20% Off</span></span>
+                <div class="price">
+                    <div class="new">$18.00 USD</div>
+                    <div class="old"><s>$24.00 USD</s></div>
+                </div>
+            </div>
+            <div class="details"></div>
+        </div>
+
+        <div class="box" data-units="3" data-price="24.00">
+            <div class="header">
+                <input type="radio" name="unit" />
+                <span class="label">3 Units <span class="discount">30% Off</span></span>
+                <div class="price">
+                    <div class="new">$24.00 USD</div>
+                    <div class="old"><s>$24.00 USD</s></div>
+                </div>
+            </div>
+            <div class="details"></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="Delivery">Free Delivery</p>
+            <p>Total: <span id="total">$10.00 USD</span></p>
+        </div>
+        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+        <p class="powered">© Powered by Pumper</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
